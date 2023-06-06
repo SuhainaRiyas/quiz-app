@@ -6,6 +6,106 @@
   height: 40vmin;
   pointer-events: none;
 }
+.navbar-wrapper{
+  background: linear-gradient(90deg, rgba(3,9,112,1) 25%, rgba(56,128,241,1) 50%, rgba(3,9,112,1) 75%);
+}
+.appName{
+    color: white;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+.userlogout.nav-item.dropdown  {
+  width: 150px !important;
+  text-align: end;
+}
+a.dropdown-toggle.nav-link,a.dropdown-toggle.show.nav-link{
+  color: #fff;
+}
+.loginContainer{
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.topicDes{
+  background: linear-gradient(90deg, rgba(56,128,241,1) 5%, rgba(3,9,112,0.9276960784313726) 50%, rgba(56,128,241,1) 96%);
+  margin: 5px 5px 5px 0px;
+  color:#fff;
+  padding: 10px;
+  cursor: pointer;
+}
+.quiz-btn.btn.btn-primary{
+  background-color: #224fbc !important;
+  border: 1px solid #224fbc;
+  color: #fff;
+  margin-top: 15px;
+}
+.quiz-btn.btn.btn-danger{
+  /* background-color: #224fbc !important;
+  border: 1px solid #224fbc; */
+  color: #fff;
+  margin: 15px auto auto 15px;
+}
+.quiz-instruct{
+  text-align: left;
+  margin-top: 25px;
+}
+
+/** Quiz Questions css **/
+.quiz-container {
+  max-width: 500px;
+  min-width: 250px;
+  background: linear-gradient(90deg, rgba(56,128,241,1) 5%, rgba(3,9,112,0.9276960784313726) 50%, rgba(56,128,241,1) 96%);
+  color: #fff;
+  border-radius: 4px;
+  padding: 30px 60px;
+  margin: auto;
+}
+.quiz-container ul {
+  margin-top: 20px;
+  margin-left: -40px;
+}
+
+.quiz-container ul li {
+  text-decoration: none;
+  list-style: none;
+  color: #2d264b;
+  font-size: 16px;
+  background: #ffffff;
+  border: 1px solid #eaeaea;
+  border-radius: 16px;
+  padding: 11px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+.quiz-container button{
+  background: #030970;
+  border-radius: 10px;
+  color: #ffffff;
+  padding: 3px 45px;
+  outline: none;
+  border: none;
+}
+.quiz-container .btn-danger{
+  background: #bc0808;
+}
+.quiz-container ul .selected-answer {
+  background-color: #030970;
+  color:#fff;
+}
+.question-count{
+  color: #e7a0a0;
+}
+.question-level{
+  color: #fc8306;
+}
+.question-text{
+  text-align: left;
+  margin-top: 15px;
+  font-size: 20px;
+}
+/** End quiz css **/
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
