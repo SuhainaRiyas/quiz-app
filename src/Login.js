@@ -8,7 +8,7 @@ const Login = () => {
     const navigate = useNavigate()
     useEffect(() => {
         if (!token) {
-            axios.get('http://localhost/api/getUrl.php').then((response) => {
+            axios.get('http://localhost/quiz-app/api/getUrl.php').then((response) => {
                 if (response.data.authUrl) {
                     const url = response.data.authUrl
                     setGoogleUrl(url)
