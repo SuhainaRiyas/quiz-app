@@ -66,20 +66,12 @@ const Quiz = () => {
                 quiz: 'questions'
             }
         }).then((response) => {
-            console.log(response.data)
-
             if (response.data.status === 'success') {
                 const data = response.data
-                console.log(response.data)
                 setQuestions(data.questions)
                 setTopicName(data.topic)
             } else {
-                // toast.error(response.data.message, {
-                //     position: "top-right",
-                //     autoClose: 3000,
-                //     hideProgressBar: false,
-                //     closeOnClick: true,
-                // });
+              
             }
         });
     }
